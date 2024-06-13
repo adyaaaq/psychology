@@ -12,6 +12,7 @@ body {
 }
 
 .nav {
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -24,9 +25,6 @@ body {
   align-items: center;
   padding: 0 25px 0 25px;
   background-color: #fff;
-
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 .nav .links a {
@@ -37,7 +35,7 @@ body {
 }
 
 .nav .links .mainlink {
-  color: #e0501b;
+  color: rgb(47, 139, 224);
 }
 
 .nav h4 {

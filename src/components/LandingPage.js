@@ -6,7 +6,7 @@ const LandingPage = () => {
       <div className="landingText" data-aos="fade-up" data-aos-duration="1000">
         <h1>
           Stay In.
-          <span style={{ color: "#e0501b", fontSize: "4vw" }}>
+          <span style={{ color: "#0ab75b", fontSize: "4vw" }}>
             {" "}
             Stay Safe.
           </span>{" "}
