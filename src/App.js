@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
-import NavBar from "./components/NavBar";
-import LandingPage from "./components/LandingPage";
-import AboutSection from "./components/AboutSection";
-import InfoSection from "./components/InfoSection";
-import Banner from "./components/Banner";
-import Footer from "./components/Footer";
-import "./App.css";
-import "aos/dist/aos.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AOS from "aos";
+import "aos/dist/aos.css";
+import Home from "./pages/Home";
+import News from "./pages/News";
+import QuizPage from "./pages/Quiz";
+import Books from "./pages/Books";
+import Navbar from "./components/NavBar";
 
 function App() {
   useEffect(() => {
@@ -15,14 +14,17 @@ function App() {
   }, []);
 
   return (
-    <div className="wrapper">
-      <NavBar />
-      <LandingPage />
-      <AboutSection />
-      <InfoSection />
-      <Banner />
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/quiz" element={<QuizPage />} />
+          <Route path="/books" element={<Books />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
