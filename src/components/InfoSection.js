@@ -1,11 +1,8 @@
 import React from "react";
-import movie from "../img/movie.png";
-import card from "../img/next.png";
-import learn from "../img/learn.png";
-import next from "../img/next.png";
-import videocall from "../img/videocall.png";
 import Card from "../components/NewsCard"
 import newsItems from "../assets/json"; 
+import booksData from "../assets/books"; 
+import BookCard from "./BookCard";
 
 const InfoSection = () => {
   return (
@@ -20,6 +17,11 @@ const InfoSection = () => {
       <div className="infoCards">
         {newsItems.map((news) => (
           <Card key={news.id} news={news} />
+        ))}
+      </div>
+      <div className="infoCards">
+        {booksData.map((book) => (
+          <BookCard key={book.id} book={book} />
         ))}
       </div>
     </div>
