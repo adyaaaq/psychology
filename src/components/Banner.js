@@ -11,12 +11,12 @@ const Banner = () => {
         data-aos-duration="1000"
       >
         <h1>
-          Download the HealthCare App Today. <br />{" "}
+          Холбогдрх <br />{" "}
           <span
             style={{ fontSize: "1.6vw", fontWeight: "normal" }}
             className="bannerInnerText"
           >
-            Stay Updated and get all your medical needs taken care of!
+            бла бла
           </span>{" "}
         </h1>
         <a href="#">

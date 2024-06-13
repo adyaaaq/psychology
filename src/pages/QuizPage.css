@@ -53,3 +53,19 @@
 .quizItem:last-child {
   border-bottom: none;
 }
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUpAnimation 1s ease forwards;
+}
+
+@keyframes fadeUpAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

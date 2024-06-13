@@ -7,13 +7,13 @@ const NavBar = () => {
         <h4>Хөгжлийн сэтгэл судлал</h4>
       </div>
       <div className="links">
-        <a href="#" className="mainlink">
+        <a href="/" className="mainlink">
           Нүүр хуудас
         </a>
-        <a href="#">Мэдээ</a>
+        <a href="/news">Насны онцлог</a>
         <a href="/quiz">Тест</a>
-        <a href="#">Шинэ номнууд</a>
-        <a href="#">Туршилтууд</a>
+        <a href="/books">Шинэ номнууд</a>
+        <a href="/">Туршилтууд</a>
       </div>
     </div>
   );

@@ -3,14 +3,15 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer">
-      <h2>HealthCare.</h2>
+      <h2>Developmental Psychology.</h2>
       <div className="footerlinks">
         <a href="#" className="mainlink">
-          Corona Updates
+          Нүүр хуудас
         </a>
-        <a href="#">Help</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#">Насны онцлог</a>
+        <a href="#">Тест өгөх</a>
+        <a href="#">Ном үзэх</a>
+        <a href="#">Судлагаа унших</a>
       </div>
     </div>
   );

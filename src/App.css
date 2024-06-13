@@ -1,7 +1,7 @@
 html,
 body {
   background-color: #fff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Nunito", sans-serif;
   overflow-x: hidden !important;
   margin: 0px !important;
   padding: 0px !important;
@@ -66,7 +66,7 @@ body {
 
 .landingText h3 {
   margin: 6px !important;
-  font-size: 20px;
+  font-size: 17px;
   opacity: 0.5;
   line-height: 30px;
 }
@@ -174,8 +174,6 @@ li span {
   padding: 40px 0;
   flex-wrap: wrap;
 }
-
-
 
 .infoCards .card {
   position: relative;
@@ -453,14 +451,6 @@ li span {
     font-size: 16px;
   }
 }
-
-
-
-
-
-
-
-
 
 /* Card */
 

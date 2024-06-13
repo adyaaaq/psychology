@@ -5,18 +5,18 @@ const LandingPage = () => {
     <div className="landing">
       <div className="landingText" data-aos="fade-up" data-aos-duration="1000">
         <h1>
-          Stay In.
+          Мэдлэг.
           <span style={{ color: "#0ab75b", fontSize: "4vw" }}>
             {" "}
-            Stay Safe.
+            Хөгжил.
           </span>{" "}
         </h1>
         <h3>
-          Lets all work together to put an end to this pandemic. <br /> Help
-          stop the spread.
+          Хөгжлийн сэтгэл судлал нь хүн төрөлхтөн амьдралынхаа туршид <br />
+          хэрхэн, яагаад өөрчлөгддөг вэ?
         </h3>
         <div className="btn">
-          <a href="#">Learn More</a>
+          <a href="#">Дэлгэрэнгүй</a>
         </div>
       </div>
       <div
