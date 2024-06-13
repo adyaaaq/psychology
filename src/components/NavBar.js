@@ -8,11 +8,12 @@ const NavBar = () => {
       </div>
       <div className="links">
         <a href="#" className="mainlink">
-          Corona Updates
+          Нүүр хуудас
         </a>
-        <a href="#">Help</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#">Мэдээ</a>
+        <a href="#">Тест</a>
+        <a href="#">Шинэ номнууд</a>
+        <a href="#">Туршилтууд</a>
       </div>
     </div>
   );
