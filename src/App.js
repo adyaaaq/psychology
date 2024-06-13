@@ -7,6 +7,7 @@ import News from "./pages/News";
 import QuizPage from "./pages/Quiz";
 import Books from "./pages/Books";
 import Navbar from "./components/NavBar";
+import Details from "./pages/CardDetail"; // Import the Details component
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/quiz" element={<QuizPage />} />
           <Route path="/books" element={<Books />} />
+          <Route path="/details" element={<Details />} /> {/* Add this route */}
         </Routes>
       </div>
     </Router>
