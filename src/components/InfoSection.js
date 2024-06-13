@@ -5,6 +5,8 @@ import learn from "../img/learn.png";
 import next from "../img/next.png";
 import videocall from "../img/videocall.png";
 import Card from "../components/NewsCard"
+import newsItems from "../assets/json"; 
+
 const InfoSection = () => {
   return (
     <div className="infoSection">
@@ -16,11 +18,9 @@ const InfoSection = () => {
       </div>
       
       <div className="infoCards">
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+        {newsItems.map((news) => (
+          <Card key={news.id} news={news} />
+        ))}
       </div>
     </div>
   );
