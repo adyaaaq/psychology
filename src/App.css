@@ -2,7 +2,7 @@ html,
 body {
   background-color: #fff;
   font-family: "Nunito", sans-serif;
-  overflow-x: hidden !important;
+
   margin: 0px !important;
   padding: 0px !important;
 }
@@ -518,16 +518,10 @@ li span {
   color: #545d7a;
 }
 
-
-
-
-
-
 /* book */
 /* BookCard.css */
 
 .book-card {
-  
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -535,7 +529,7 @@ li span {
   /* position: relative; */
   align-items: center;
   width: 180px;
-  height:300px;
+  height: 300px;
   /* height:100%; */
   margin: 20px;
   border-radius: 20px;
@@ -555,8 +549,6 @@ li span {
   object-fit: cover;
 }
 
-
-
 .book-card-content {
   /* background-color: red; */
   display: flex;
@@ -570,7 +562,7 @@ li span {
   z-index: 2;
   color: #000;
 }
-.book-card-content-bottom{
+.book-card-content-bottom {
   display: block;
   text-align: center;
   /* display: flex; */
@@ -604,10 +596,10 @@ li span {
   font-weight: bold;
 }
 
-.books-padding{
+.books-padding {
   margin-top: 100px;
 }
-.new-books{
+.new-books {
   padding: 40px 0;
   /* margin-top: 100px; */
   background-color: red;
