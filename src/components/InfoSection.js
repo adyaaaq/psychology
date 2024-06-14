@@ -18,7 +18,7 @@ const InfoSection = () => {
       {ageCategories.map((ageCategory) => (
         <AgeCard key={ageCategory.id} ageCard={ageCategory} />))}
     </div>
-
+{/* 
       <div className="infoCards">
         {booksData.map((book) => (
           <BookCard key={book.id} book={book} />
@@ -26,7 +26,7 @@ const InfoSection = () => {
         {booksData.map((book) => (
           <BookCard key={book.id} book={book} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

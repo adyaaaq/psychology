@@ -26,24 +26,6 @@ const Details = () => {
           <p key={index} className="details-p">{paragraph.trim()}</p>
         ))}
 
-{/* 
-      <p className="details-p">
-        Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.
-        Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.
-        Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.
-      </p>
-      
-     
-      <p className="details-p">
-        Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.
-        Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.
-        Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.
-      </p>
-      <p className="details-p">
-        Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.
-        Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.
-        Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.
-      </p> */}
     </div>
 
   );

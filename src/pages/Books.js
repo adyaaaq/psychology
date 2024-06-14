@@ -2,6 +2,8 @@ import React from "react";
 import BookCard from "../components/BookCard";
 import booksData from "../assets/books";
 import Navbar from "../components/NavBar";
+import AgeCard from "../components/ageCard";
+import ageCategories from "../assets/ages";
 
 export default function Books() {
   return (
@@ -9,6 +11,7 @@ export default function Books() {
       {/* <h1>
       Шинэхэн номнууд
     </h1> */}
+
       <div className="new-books">
         {booksData.map((book) => (
           <BookCard key={book.id} book={book} />
