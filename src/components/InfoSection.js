@@ -23,6 +23,9 @@ const InfoSection = () => {
         {booksData.map((book) => (
           <BookCard key={book.id} book={book} />
         ))}
+        {booksData.map((book) => (
+          <BookCard key={book.id} book={book} />
+        ))}
       </div>
     </div>
   );

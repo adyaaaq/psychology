@@ -13,8 +13,8 @@ const BookCard = ({ book }) => {
             <p>{author}</p>
             <p>{year}</p>
         </div>
-        
 
+          
           {/* <div className="book-card-btn">
             <span className="details-text">Details</span>
           </div> */}
