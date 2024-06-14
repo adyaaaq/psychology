@@ -3,9 +3,11 @@ import { FaBars, FaArrowLeft } from "react-icons/fa";
 
 const NavBar = () => {
   const [showModal, setShowModal] = useState(false);
+  const [showBackdrop, setShowBackdrop] = useState(false);
 
   const toggleModal = () => {
     setShowModal(!showModal);
+    setShowBackdrop(!showBackdrop);
     document.querySelector(".menu-icon").classList.toggle("rotate");
   };
 
@@ -28,6 +30,10 @@ const NavBar = () => {
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
+      <div
+        className={`backdrop ${showBackdrop ? "show" : "hide"}`}
+        onClick={toggleModal}
+      ></div>
       <div
         className={`modal ${showModal ? "show" : "hide"}`}
         onClick={toggleModal}
