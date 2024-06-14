@@ -794,3 +794,33 @@ li span {
     font-size: 16px;
   }
 }
+
+
+/* agecard css */
+.ageCard{
+  padding: 0 10px;
+  width: 200px;
+  height: 120px;
+  margin:20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  border:1px solid #000;
+  opacity: 0; /* Initial opacity */
+  transition: border-color 0.3s ease-in-out, opacity 0.3s ease-in-out;}
+.ageCard-line{
+  background-color: gray;
+  height: 70px;
+  width: 1px;
+}
+.ageCard-text{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+}
+.ageCard:hover{
+  border-color: rgb(47, 139, 224); /* Change border color on hover */
+  opacity: 1; /* Change opacity on hover */
+}
