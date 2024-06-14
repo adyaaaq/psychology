@@ -809,7 +809,8 @@ li span {
   border-radius: 20px;
   border:1px solid #000;
   opacity: 0; /* Initial opacity */
-  transition: border-color 0.3s ease-in-out, opacity 0.3s ease-in-out;}
+  border: 1px solid #000; /* Initial border color */
+  transition: border-color 2s ease-in-out, opacity 2s ease-in-out;}
 .ageCard-line{
   background-color: gray;
   height: 70px;
@@ -823,4 +824,26 @@ li span {
 .ageCard:hover{
   border-color: rgb(47, 139, 224); /* Change border color on hover */
   opacity: 1; /* Change opacity on hover */
+}
+
+
+/* details page */
+.details-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px
+}
+.details-head{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.details-img{
+  margin-right: 20px;
+}
+.details-p{
+  text-indent:40px;
+  text-align: justify;
 }
