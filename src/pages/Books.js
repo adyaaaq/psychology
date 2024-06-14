@@ -4,12 +4,12 @@ import booksData from "../assets/books";
 import Navbar from "../components/NavBar";
 
 export default function Books() {
-  return  <div className="books-padding">
-    {/* <Navbar/> */}
-    {/* <h1>
+  return (
+    <div>
+      {/* <h1>
       Шинэхэн номнууд
     </h1> */}
-    <div className="new-books">
+      <div className="new-books">
         {booksData.map((book) => (
           <BookCard key={book.id} book={book} />
         ))}
@@ -17,5 +17,6 @@ export default function Books() {
           <BookCard key={book.id} book={book} />
         ))}
       </div>
-  </div> ;
+    </div>
+  );
 }

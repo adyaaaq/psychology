@@ -9,7 +9,6 @@ import "../App.css";
 const Home = () => {
   return (
     <div className="wrapper">
-      <NavBar />
       <LandingPage />
       <AboutSection />
       <InfoSection />

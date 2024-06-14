@@ -24,7 +24,7 @@ export default function TestPage({ quiz, score, setScore, onFinish }) {
   }, [num]);
 
   return (
-    <div className="wrapper">
+    <div className="TestPagewrapper">
       <p className="process">
         {num + 1}/{quiz.questions.length}
       </p>

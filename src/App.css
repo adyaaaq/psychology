@@ -13,7 +13,7 @@ body {
 
 .nav {
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-  position: fixed;
+  position: sticky;
   z-index: 1000;
   top: 0;
   right: 0;
@@ -52,7 +52,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 10vw 0 10vw;
-  height: 100vh;
 }
 
 .landingText {
