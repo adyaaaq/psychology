@@ -36,10 +36,6 @@ const QuizPage = () => {
 
   return (
     <div className="quizpageContainer">
-      <NavBar />
-      <div className="quizpageNavbar">
-        <h1>Quiz</h1>
-      </div>
       <div className="quizpageContent">
         <div
           className="categoryContainer"
