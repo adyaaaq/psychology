@@ -6,7 +6,6 @@
 
 .quizpageNavbar {
   color: white;
-
   text-align: center;
 }
 
@@ -16,9 +15,11 @@
 }
 
 .categoryContainer {
-  flex: 0 0 30%;
+  flex: 0 0 20%;
   background-color: #f0f0f0;
   padding: 20px;
+  margin-left: 5px;
+  border-radius: 15px;
 }
 
 .categoryList {
@@ -33,6 +34,7 @@
 
 .categoryItem.active {
   background-color: rgb(47, 139, 224);
+  border-radius: 15px;
 }
 
 .quizContainer {
@@ -53,6 +55,16 @@
 .quizItem:last-child {
   border-bottom: none;
 }
+
+.quizDetailContainer {
+  flex: 1;
+
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .fade-up {
   opacity: 0;
   transform: translateY(20px);

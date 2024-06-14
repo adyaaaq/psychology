@@ -23,8 +23,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/quiz" element={<QuizPage />} />
           <Route path="/books" element={<Books />} />
-          <Route path="/details/:id" element={<Details />} /> {/* Details page route with ID parameter */}
-     
+          <Route path="/details/:id" element={<Details />} />{" "}
         </Routes>
       </div>
     </Router>

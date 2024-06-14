@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.process {
+  font-size: 1.5rem;
+}
+
+.question {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.answers-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  justify-items: center;
+}
+
+.answer {
+  width: 80%;
+  padding: 16px;
+  font-size: 1.6rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.answer:hover {
+  background-color: #74d19cba;
+}

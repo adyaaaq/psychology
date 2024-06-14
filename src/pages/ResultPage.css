@@ -1,0 +1,31 @@
+/* ResultPage.css */
+.result-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.result {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.return-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 16px;
+  background-color: #389561;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.return-button:hover {
+  background-color: #2e7449;
+}
