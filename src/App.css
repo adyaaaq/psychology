@@ -10,7 +10,6 @@ body {
 * {
   text-decoration: none !important;
 }
-
 .nav {
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   position: sticky;
@@ -27,11 +26,23 @@ body {
   background-color: #fff;
 }
 
+.nav .links {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
 .nav .links a {
-  margin-right: 25px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+  transition: ease-in 0.2s;
+}
+
+.nav .links a:hover {
+  color: rgb(47, 139, 224);
 }
 
 .nav .links .mainlink {
@@ -42,6 +53,31 @@ body {
   font-size: 22px;
   font-weight: bold;
   margin-left: 25px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+  transition: transform 0.4s;
+}
+
+.rotate1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.rotate2 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.hidden {
+  opacity: 0;
 }
 
 /* LANDING CSS */
@@ -299,158 +335,6 @@ li span {
   color: #e0501b;
 }
 
-/* RESPONSIVE */
-
-@media only screen and (max-width: 600px) {
-  .nav {
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
-    height: auto;
-    overflow-y: hidden;
-  }
-
-  .nav h4 {
-    font-size: 6vw;
-    margin-top: 10px;
-    margin-bottom: 14px;
-  }
-
-  .nav .links a {
-    margin-right: 25px;
-    font-size: 12px;
-    font-weight: 600;
-  }
-
-  /* LANDING PAGE */
-
-  .landing {
-    flex-direction: column-reverse;
-    height: 750px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .landingText h1 {
-    font-size: 6vw;
-    margin: 0 !important;
-  }
-
-  .landingText h3 {
-    font-size: 16px;
-  }
-
-  .landingText .btn {
-    margin: 0 auto;
-  }
-
-  .landingText .btn a {
-    font-size: 3vw;
-  }
-
-  .landingImage img {
-    width: 52vw;
-    margin-bottom: 20px;
-  }
-
-  /* ABOUT */
-
-  .about {
-    height: auto;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .aboutText {
-    padding: 0 50px;
-    height: 100px;
-  }
-
-  .aboutText h1 {
-    left: 40px;
-    font-size: 5vw;
-  }
-
-  .aboutText img {
-    width: 16vw;
-    top: 10px;
-    left: -30px;
-  }
-
-  .aboutList {
-    width: 75%;
-  }
-
-  ol li {
-    font-size: 26px;
-  }
-
-  li p {
-    font-size: 14px;
-  }
-
-  .infoSection {
-    height: auto;
-  }
-
-  .infoHeader {
-    text-align: center;
-    margin: 40px 0;
-    font-size: 0.8rem;
-  }
-
-  .infoCards {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .infoCards .card {
-    margin-bottom: 60px;
-  }
-
-  .banner {
-    height: auto;
-    flex-direction: column-reverse;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .banner h1 {
-    font-size: 6vw;
-  }
-
-  .bannerInnerText {
-    font-size: 3vw !important;
-  }
-
-  .bannerText img {
-    width: 20vw;
-  }
-
-  .bannerImg img {
-    width: 26vw;
-  }
-
-  .footer {
-    padding-bottom: 40px;
-  }
-
-  .footerlinks a {
-    margin: 10px;
-    font-size: 16px;
-  }
-}
-
 /* Card */
 
 .card {
@@ -608,4 +492,251 @@ li span {
   align-items: center;
   /* padding: 40px 0; */
   flex-wrap: wrap;
+}
+/* Back button */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.backIcon {
+  font-size: 16px !important;
+}
+.back-button i {
+  margin-right: 5px;
+}
+.modal-content {
+  position: absolute;
+  top: 0;
+  right: -300px; /* Initial position outside the screen */
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: right 0.5s, opacity 0.5s; /* Apply transition to right and opacity */
+}
+
+.modal.show .modal-content {
+  right: 0; /* Slide in from the right */
+  opacity: 1;
+}
+
+.modal.hide .modal-content {
+  right: -300px; /* Slide out to the right */
+  opacity: 0;
+}
+/* Adjust modal links */
+.modal-links {
+  padding-top: 60px; /* Make space for back button */
+}
+
+.modal-links a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.modal-links a:hover {
+  color: rgb(47, 139, 224);
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1062px) {
+  /* Gradually decrease font size */
+  .nav .links a {
+    font-size: calc(17px - 0.01 * (100vw - 769));
+  }
+
+  /* Hide the links by default */
+  .nav .links {
+    display: none;
+  }
+
+  /* Styles for the menu icon */
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: transform 0.4s;
+  }
+
+  .rotate1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .rotate2 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* Styles for the modal */
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: opacity 0.5s;
+  }
+
+  .modal.show {
+    display: block;
+  }
+  .modal-content {
+    position: absolute;
+    top: 0;
+    right: -300px; /* Initial position outside the screen */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: right 0.5s, opacity 0.5s; /* Apply transition to right and opacity */
+    opacity: 0; /* Hide the modal initially */
+  }
+
+  .modal.show .modal-content {
+    right: 0; /* Slide in from the right */
+    opacity: 1; /* Show the modal with fade effect */
+  }
+
+  .modal.hide .modal-content {
+    right: -300px; /* Slide out to the right */
+    opacity: 0; /* Hide the modal with fade effect */
+  }
+  /* Modal links */
+  .modal-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .modal-links a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .modal-links a:hover {
+    color: rgb(47, 139, 224);
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* ABOUT */
+
+  .about {
+    height: auto;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutText {
+    padding: 0 50px;
+    height: 100px;
+  }
+
+  .aboutText h1 {
+    left: 40px;
+    font-size: 5vw;
+  }
+
+  .aboutText img {
+    width: 16vw;
+    top: 10px;
+    left: -30px;
+  }
+
+  .aboutList {
+    width: 75%;
+  }
+
+  ol li {
+    font-size: 26px;
+  }
+
+  li p {
+    font-size: 14px;
+  }
+
+  .infoSection {
+    height: auto;
+  }
+
+  .infoHeader {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 0.8rem;
+  }
+
+  .infoCards {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .infoCards .card {
+    margin-bottom: 60px;
+  }
+
+  .banner {
+    height: auto;
+    flex-direction: column-reverse;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 6vw;
+  }
+
+  .bannerInnerText {
+    font-size: 3vw !important;
+  }
+
+  .bannerText img {
+    width: 20vw;
+  }
+
+  .bannerImg img {
+    width: 26vw;
+  }
+
+  .footer {
+    padding-bottom: 40px;
+  }
+
+  .footerlinks a {
+    margin: 10px;
+    font-size: 16px;
+  }
 }
