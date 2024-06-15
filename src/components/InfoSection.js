@@ -14,10 +14,11 @@ const InfoSection = () => {
         data-aos-duration="1000"
       ></div>
       <div className="infoCards">
-      {ageCategories.map((ageCategory) => (
-        <AgeCard key={ageCategory.id} ageCard={ageCategory} />))}
-    </div>
-{/* 
+        {ageCategories.map((ageCategory) => (
+          <AgeCard key={ageCategory.id} ageCard={ageCategory} />
+        ))}
+      </div>
+      {/* 
       <div className="infoCards">
         {booksData.map((book) => (
           <BookCard key={book.id} book={book} />

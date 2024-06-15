@@ -44,8 +44,15 @@ body {
 .nav .links a:hover {
   color: rgb(47, 139, 224);
 }
-
-.nav .links .mainlink {
+.nav .links a:focus {
+  color: rgb(47, 139, 224);
+}
+.mainlink.active,
+.modal-links a.active {
+  color: rgb(47, 139, 224);
+}
+.mainlink.active,
+.links a.active {
   color: rgb(47, 139, 224);
 }
 
@@ -795,55 +802,53 @@ li span {
   }
 }
 
-
 /* agecard css */
-.ageCard{
+.ageCard {
   padding: 0 10px;
   width: 200px;
   height: 120px;
-  margin:20px;
+  margin: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   border-radius: 20px;
-  border:1px solid #000;
+  border: 1px solid #000;
   opacity: 0; /* Initial opacity */
   border: 1px solid #000; /* Initial border color */
-  transition: border-color 2s ease-in-out, opacity 2s ease-in-out;}
-.ageCard-line{
+  transition: border-color 2s ease-in-out, opacity 2s ease-in-out;
+}
+.ageCard-line {
   background-color: gray;
   height: 70px;
   width: 1px;
 }
-.ageCard-text{
+.ageCard-text {
   font-size: 1.2rem;
   font-weight: 600;
   color: #000;
 }
-.ageCard:hover{
+.ageCard:hover {
   border-color: rgb(47, 139, 224); /* Change border color on hover */
   opacity: 1; /* Change opacity on hover */
 }
 
-
 /* details page */
-.details-body{
+.details-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 30px
+  padding: 0 30px;
 }
-.details-head{
-  
+.details-head {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.details-img{
+.details-img {
   margin-right: 20px;
 }
-.details-p{
-  text-indent:40px;
+.details-p {
+  text-indent: 40px;
   text-align: justify;
 }

@@ -8,6 +8,7 @@ import QuizPage from "./pages/Quiz";
 import Books from "./pages/Books";
 import Navbar from "./components/NavBar";
 import Details from "./pages/CardDetail"; // Import the Details component
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -16,16 +17,15 @@ function App() {
 
   return (
     <Router>
-      <div>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/quiz" element={<QuizPage />} />
-          <Route path="/books" element={<Books />} />
-          <Route path="/details/:id" element={<Details />} />{" "}
-        </Routes>
-      </div>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/quiz" element={<QuizPage />} />
+        <Route path="/books" element={<Books />} />
+        <Route path="/details/:id" element={<Details />} />{" "}
+      </Routes>
     </Router>
   );
 }
