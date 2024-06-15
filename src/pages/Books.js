@@ -9,7 +9,6 @@ import AccordionUsage from "../components/theories";
 export default function Books() {
   return (
     <div>
-      <AccordionUsage/>
       {/* <h1>
       Шинэхэн номнууд
     </h1> */}

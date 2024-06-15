@@ -9,6 +9,7 @@ import Books from "./pages/Books";
 import Navbar from "./components/NavBar";
 import Details from "./pages/CardDetail"; // Import the Details component
 import ScrollToTop from "./components/ScrollToTop";
+import Theories from "./pages/Experiments";
 
 function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/quiz" element={<QuizPage />} />
         <Route path="/books" element={<Books />} />
+        <Route path="/theories" element={<Theories />} />
         <Route path="/details/:id" element={<Details />} />{" "}
       </Routes>
     </Router>
