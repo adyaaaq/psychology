@@ -865,3 +865,11 @@ li span {
 .accordion{
   background-color: red;
 }
+
+
+/* styles.css */
+.logo img {
+  width: 60px; /* Adjust the width as needed */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Ensures it is displayed as a block element */
+}

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { FaBars, FaArrowLeft } from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
 
+import logo from '../components/img/logo.png';
+
 const NavBar = () => {
   const [showModal, setShowModal] = useState(false);
   const [showBackdrop, setShowBackdrop] = useState(false);
@@ -21,7 +23,7 @@ const NavBar = () => {
   return (
     <div className="nav">
       <div className="logo">
-        <h4>Хөгжлийн сэтгэл судлал</h4>
+        <img src={logo} alt="Хөгжлийн сэтгэл судлал" />
       </div>
       <div className="links">
         <NavLink
