@@ -852,3 +852,16 @@ li span {
   text-indent: 40px;
   text-align: justify;
 }
+
+
+
+/* Accordion-container */
+
+.Accordion-contianer{
+  width: 1000px;
+  margin: 40px;
+}
+
+.accordion{
+  background-color: red;
+}
