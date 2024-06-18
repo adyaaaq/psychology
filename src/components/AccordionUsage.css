@@ -2,14 +2,14 @@
 
 
 .accordion {
-    background-color: red;
+    background-color: #0AB75B;
     border: 1px solid #ccc;
     border-radius: 8px;
     margin-bottom: 16px;
   }
   
 .accordion.expanded {
-    border-bottom: 1px solid #ff0000;
+    border-bottom: 1px solid #0AB75B;
   }
   .accordion-summary {
     background-color: #f7f7f7;

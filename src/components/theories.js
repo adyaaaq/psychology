@@ -7,6 +7,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
 import './AccordionUsage.css'; // Import the CSS file
+import CustomAccordion from './accordion';
 
 export default function AccordionUsage() {
   const [expanded, setExpanded] = React.useState(false);
@@ -17,6 +18,45 @@ export default function AccordionUsage() {
 
   return (
     <div className='Accordion-contianer'>
+       <CustomAccordion 
+        expanded={expanded} 
+        handleChange={handleChange} 
+        panelId="panel1" 
+        title="Сэтгэц - Бэлгийн хөгжил (Психосектуаль)" 
+        content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."} 
+      />
+       <CustomAccordion 
+        expanded={expanded} 
+        handleChange={handleChange} 
+        panelId="panel2" 
+        title="Оюун ухааны хөгжлийн онолууд (Интеллект)" 
+        content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."} 
+      />
+       <CustomAccordion 
+        expanded={expanded} 
+        handleChange={handleChange} 
+        panelId="panel3" 
+        title="Ёс суртахууны хөгжлийн үе шатууд (Этический)" 
+        content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."} 
+      />
+      <CustomAccordion 
+       expanded={expanded} 
+       handleChange={handleChange} 
+       panelId="panel4" 
+       title="Сэтгэц нийгмийн хөгжлийн үе шатууд (Психосоциаль)" 
+       content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."} 
+     />
+     <CustomAccordion 
+      expanded={expanded} 
+      handleChange={handleChange} 
+      panelId="panel5" 
+      title="Ээнэгшлийн онол" 
+      content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."} 
+    />
+
+
+
+
       <Accordion 
         className={`accordion ${expanded === 'panel1' ? 'expanded' : ''}`} 
         expanded={expanded === 'panel1'} 
@@ -48,24 +88,6 @@ export default function AccordionUsage() {
           malesuada lacus ex, sit amet blandit leo lobortis eget.
           </p>
            </AccordionDetails>
-      </Accordion>
-      <Accordion 
-        className={`accordion ${expanded === 'panel2' ? 'expanded' : ''}`} 
-        expanded={expanded === 'panel2'} 
-        onChange={handleChange('panel2')}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2-content"
-          id="panel2-header"
-          className="accordion-summary"
-        >
-          Accordion 2
-        </AccordionSummary>
-        <AccordionDetails className="accordion-details">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
       </Accordion>
     </div>
   );
