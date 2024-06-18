@@ -21,6 +21,14 @@ const CustomAccordion = ({ expanded, handleChange, panelId, title, content }) =>
       </AccordionSummary>
       <AccordionDetails className="accordion-details">
         {content}
+        <p className='details-p'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </p>
       </AccordionDetails>
     </Accordion>
   );

@@ -17,6 +17,7 @@ export default function AccordionUsage() {
   };
 
   return (
+    <div className='Big-container'>
     <div className='Accordion-contianer'>
        <CustomAccordion 
         expanded={expanded} 
@@ -89,6 +90,7 @@ export default function AccordionUsage() {
           </p>
            </AccordionDetails>
       </Accordion>
+    </div>
     </div>
   );
 }

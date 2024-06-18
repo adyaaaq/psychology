@@ -858,7 +858,7 @@ li span {
 /* Accordion-container */
 
 .Accordion-contianer{
-  width: 1000px;
+  max-width: 1000px;
   margin: 40px;
 }
 
@@ -866,6 +866,11 @@ li span {
   background-color: red;
 }
 
+.Big-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 /* styles.css */
 .logo img {
