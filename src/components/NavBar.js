@@ -21,6 +21,7 @@ const NavBar = () => {
   }, [location]);
 
   return (
+    <div className="Big-container">
     <div className="nav">
       <div className="logo">
         <img src={logo} alt="Хөгжлийн сэтгэл судлал" />
@@ -121,6 +122,7 @@ const NavBar = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
