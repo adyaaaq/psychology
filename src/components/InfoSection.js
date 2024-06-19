@@ -7,26 +7,21 @@ import ageCategories from "../assets/ages";
 import AgeCard from "../components/ageCard";
 const InfoSection = () => {
   return (
+    <div className="Big-container">
     <div className="infoSection">
       <div
         className="infoHeader"
         data-aos="fade-up"
         data-aos-duration="1000"
-      ></div>
-      <div className="infoCards">
-        {ageCategories.map((ageCategory) => (
-          <AgeCard key={ageCategory.id} ageCard={ageCategory} />
-        ))}
+      >
+        <div className="infoCards">
+          {ageCategories.map((ageCategory) => (
+            <AgeCard key={ageCategory.id} ageCard={ageCategory} />
+          ))}
+        </div>
       </div>
-      {/* 
-      <div className="infoCards">
-        {booksData.map((book) => (
-          <BookCard key={book.id} book={book} />
-        ))}
-        {booksData.map((book) => (
-          <BookCard key={book.id} book={book} />
-        ))}
-      </div> */}
+      
+    </div>
     </div>
   );
 };

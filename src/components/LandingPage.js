@@ -2,6 +2,8 @@ import React from "react";
 import bg from "../img/bg.png";
 const LandingPage = () => {
   return (
+
+    <div className="Big-container">
     <div className="landing">
       <div className="landingText" data-aos="fade-up" data-aos-duration="1000">
         <h1>
@@ -26,6 +28,7 @@ const LandingPage = () => {
       >
         <img src={bg} alt="" />
       </div>
+    </div>
     </div>
   );
 };

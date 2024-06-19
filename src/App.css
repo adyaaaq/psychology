@@ -95,6 +95,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 10vw 0 10vw;
+  max-width: 1200px;
 }
 
 .landingText {
@@ -134,8 +135,10 @@ body {
 /* ABOUT CSS */
 
 .about {
+  /* background-color: red; */
+  width: 1200px;
   height: 600px;
-  padding: 50px;
+  /* padding: 50px; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -150,11 +153,11 @@ body {
 
 .aboutText h1 {
   position: relative;
-  left: 110px;
+  left: 160px;
 }
 
 .aboutText img {
-  width: 10vw;
+  width: 30%;
   position: absolute;
   top: 50px;
 }
@@ -193,22 +196,15 @@ li span {
 
 .infoSection {
   /* height: 600px; */
+  width: 1200px;
 }
 
 .infoHeader {
   text-align: center;
   margin-bottom: 40px;
 }
-/* 
 .infoCards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 40px 0 40px 0;
-} */
-
-.infoCards {
+  width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -296,10 +292,16 @@ li span {
 }
 
 /* Banner */
+.banner-container{
 
-.banner {
-  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   background-color: #ffce63;
+}
+.banner {
+  width: 1200px;
+  height: 400px;
   display: flex;
   flex-direction: row;
   padding: 50px;
@@ -308,18 +310,19 @@ li span {
 }
 
 .bannerText h1 {
-  font-size: 3vw;
+  font-size: 100%;
   color: #000;
   font-weight: 600;
 }
 
 .bannerText img {
-  width: 10vw;
+  width: 30%;
   margin-right: 20px;
 }
 
 .bannerImg img {
-  width: 20vw;
+  /* padding-right: 40px; */
+  width: 200%;
 }
 
 /* FOOTER CSS */
@@ -490,6 +493,7 @@ li span {
   margin-top: 100px;
 }
 .new-books {
+  width: 1200px;
   padding: 40px 0;
   /* margin-top: 100px; */
   /* background-color: red; */
@@ -755,14 +759,18 @@ li span {
   }
 
   .infoCards {
+    /* width: 1200px; */
     display: flex;
+    /* background-color: red; */
     flex-direction: column;
     padding: 50px;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-
+  .infocard-contianer{
+    width: 1200px;
+  }
   .infoCards .card {
     margin-bottom: 60px;
   }

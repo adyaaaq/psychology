@@ -1,0 +1,5 @@
+/* VerticalTimelineComponent.css */
+
+.vertical-timeline-element-content {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3); /* Static box-shadow */
+  }

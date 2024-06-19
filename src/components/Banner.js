@@ -4,6 +4,8 @@ import iosPNG from "../img/iosPNG.png";
 import MobileApp from "../img/MobileApp.png";
 const Banner = () => {
   return (
+    <div className="Big-container">
+    <div className="banner-container">
     <div className="banner">
       <div
         className="bannerText"
@@ -31,6 +33,8 @@ const Banner = () => {
       <div className="bannerImg" data-aos="fade-up" data-aos-duration="1000">
         <img src={MobileApp} alt="" />
       </div>
+    </div>
+    </div>
     </div>
   );
 };
