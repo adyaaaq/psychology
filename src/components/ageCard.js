@@ -3,7 +3,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 const AgeCard = ({ ageCard }) => {
-  const { id, title, details, imageUrl } = ageCard;
+  const { id, title, details, imageUrl, subtitle } = ageCard;
   return (
     <Link to={`/details/${id}`}>
       {" "}
@@ -11,6 +11,7 @@ const AgeCard = ({ ageCard }) => {
       <div className="ageCard" data-aos="fade-up" data-aos-duration="1000">
         <img src={imageUrl} className="ageCard-img" alt="" />
         <div className="ageCard-line"></div>
+
         <span className="ageCard-text">{title} нас</span>
       </div>
     </Link>
