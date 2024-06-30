@@ -7,6 +7,48 @@ body {
   padding: 0px !important;
 }
 
+a:focus,
+a:hover {
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+a:focus {
+  outline: 0;
+}
+
+.footer {
+  background: #001b54;
+  color: white;
+}
+.footer .links ul {
+  list-style-type: none;
+}
+.footer .links li a {
+  color: white;
+  transition: color 0.2s;
+}
+.footer .links li a:hover {
+  text-decoration: none;
+  color: #4180cb;
+}
+.footer .about-company i {
+  font-size: 25px;
+}
+.footer .about-company a {
+  color: white;
+  transition: color 0.2s;
+}
+.footer .about-company a:hover {
+  color: #4180cb;
+}
+.footer .location i {
+  font-size: 18px;
+}
+.footer .copyright p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
 * {
   text-decoration: none !important;
 }
@@ -43,18 +85,21 @@ body {
 }
 
 .nav .links a:hover {
-  color: rgb(47, 139, 224);
+  color: #001b54;
 }
 .nav .links a:focus {
-  color: rgb(47, 139, 224);
+  color: #001b54;
+  font-weight: bold;
 }
 .mainlink.active,
 .modal-links a.active {
-  color: rgb(47, 139, 224);
+  color: #001b54;
+  font-weight: bold;
 }
 .mainlink.active,
 .links a.active {
-  color: rgb(47, 139, 224);
+  color: #001b54;
+  font-weight: bold;
 }
 
 .nav h4 {
@@ -96,7 +141,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 10vw 0 10vw;
-  max-width: 1200px;
 }
 
 .landingText {
@@ -116,10 +160,9 @@ body {
 }
 
 .landingText .btn {
-  width: 120px;
   margin-top: 30px;
   padding: 14px 20px 14px 20px;
-  background-color: #e0501b;
+  background-color: #001b54;
   border-radius: 45px;
   text-align: center;
 }
@@ -137,7 +180,7 @@ body {
 
 .about {
   /* background-color: red; */
-  width: 1200px;
+  max-width: 1200px;
   height: 600px;
   /* padding: 50px; */
   display: flex;
@@ -197,7 +240,7 @@ li span {
 
 .infoSection {
   /* height: 600px; */
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .infoHeader {
@@ -205,7 +248,7 @@ li span {
   margin-bottom: 40px;
 }
 .infoCards {
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -323,26 +366,6 @@ li span {
 .bannerImg img {
   /* padding-right: 40px; */
   width: 200%;
-}
-
-/* FOOTER CSS */
-
-.footer {
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 20px;
-}
-
-.footerlinks a {
-  margin: 20px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #000;
-}
-.footerlinks .mainlink {
-  color: #e0501b;
 }
 
 /* Card */
@@ -493,7 +516,7 @@ li span {
   margin-top: 100px;
 }
 .new-books {
-  width: 1200px;
+  max-width: 1200px;
   padding: 40px 0;
   /* margin-top: 100px; */
   /* background-color: red; */
@@ -559,7 +582,7 @@ li span {
 }
 
 .modal-links a:hover {
-  color: rgb(47, 139, 224);
+  color: #001b54;
 }
 .backdrop {
   position: fixed;
@@ -705,7 +728,7 @@ li span {
   }
 
   .modal-links a:hover {
-    color: rgb(47, 139, 224);
+    color: #001b54;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -837,16 +860,16 @@ li span {
   color: #000;
 }
 .ageCard:hover {
-  border-color: rgb(47, 139, 224); /* Change border color on hover */
+  border-color: #001b54; /* Change border color on hover */
   opacity: 1; /* Change opacity on hover */
 }
 
 /* details page */
+
 .details-body {
-  display: flex;
   flex-direction: column;
 
-  padding: 0 100px;
+  padding: 0 50px;
 }
 .cardDetailList {
   list-style-type: none; /* Remove default bullets */
@@ -884,7 +907,7 @@ li span {
 }
 
 .Big-container {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
 }

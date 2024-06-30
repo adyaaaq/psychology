@@ -8,20 +8,15 @@ import AgeCard from "../components/ageCard";
 const InfoSection = () => {
   return (
     <div className="Big-container">
-    <div className="infoSection">
-      <div
-        className="infoHeader"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        <div className="infoCards">
+      <div className="infoSection">
+        <div className="infoHeader" data-aos="fade-up" data-aos-duration="1000">
+          {/* <div className="infoCards">
           {ageCategories.map((ageCategory) => (
             <AgeCard key={ageCategory.id} ageCard={ageCategory} />
           ))}
+        </div> */}
         </div>
       </div>
-      
-    </div>
     </div>
   );
 };

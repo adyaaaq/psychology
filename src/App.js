@@ -10,6 +10,7 @@ import Navbar from "./components/NavBar";
 import Details from "./pages/CardDetail"; // Import the Details component
 import ScrollToTop from "./components/ScrollToTop";
 import Theories from "./pages/Experiments";
+import Footer from "./components/Footer";
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/theories" element={<Theories />} />
         <Route path="/details/:id" element={<Details />} />{" "}
       </Routes>
+      <Footer />
     </Router>
   );
 }

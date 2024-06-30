@@ -11,11 +11,10 @@ const Home = () => {
   return (
     <div className="wrapper">
       <LandingPage />
-      <VerticalTimelineComponent/>
-      <AboutSection />
-      <InfoSection />
-      <Banner />
-      <Footer />
+      <VerticalTimelineComponent />
+      {/* <AboutSection /> */}
+      {/* <InfoSection /> */}
+      {/* <Banner /> */}
     </div>
   );
 };
