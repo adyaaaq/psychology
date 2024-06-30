@@ -9,12 +9,13 @@ const CustomAccordion = ({ expanded, handleChange, panelId, title, content, cont
   const paragraphs_list = content_list.split("##").map(paragraph => paragraph.trim()).filter(paragraph => paragraph);
 
   return (
-    <Accordion 
+    <Accordion sx={{ borderRadius: '12px' }}
       className={`accordion ${expanded === panelId ? 'expanded' : ''}`} 
       expanded={expanded === panelId} 
       onChange={handleChange(panelId)}
+    
     >
-      <AccordionSummary
+      <AccordionSummary   sx={{ borderRadius: '12px' }}
         expandIcon={<ExpandMoreIcon />}
         aria-controls={`${panelId}-content`}
         id={`${panelId}-header`}
@@ -22,7 +23,7 @@ const CustomAccordion = ({ expanded, handleChange, panelId, title, content, cont
       >
         {title}
       </AccordionSummary>
-      <AccordionDetails className="accordion-details">
+      <AccordionDetails  sx={{ borderRadius: '12px' }} className="accordion-details">
         {/* Render content with <br /> for line breaks */}
         
 

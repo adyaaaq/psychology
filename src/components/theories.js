@@ -37,12 +37,12 @@ export default function AccordionUsage() {
       />
       
 
-      <Accordion 
+      <Accordion  sx={{ borderRadius: '12px' }}
         className={`accordion ${expanded === 'panel3' ? 'expanded' : ''}`} 
         expanded={expanded === 'panel3'} 
         onChange={handleChange('panel3')}
       >
-        <AccordionSummary
+        <AccordionSummary sx={{ borderRadius: '12px' }}
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3-content"
           id="panel3-header"
@@ -50,7 +50,7 @@ export default function AccordionUsage() {
         >
           Ёс суртахууны хөгжлийн үе шатууд (Этический)
         </AccordionSummary>
-        <AccordionDetails className="accordion-details">
+        <AccordionDetails sx={{ borderRadius: '12px' }} className="accordion-details"> 
           <p className='details-p'>
           Хөгжийн сэтгэл судлалд нэгээхэн чухал байр суурь эзэлдэг онол бол Л.Кольбергийн “Ёс суртахууны хөгжлийн онол” (мөн ёс суртахууны хөгжлийн үе шатууд гэж ч нэрлэдэг). Уг онол нь анх Швейцарийн сэтгэл судлаач Жан Пиажегийн гаргасан сэтгэл зүйн онолын үндэс дээр боловсруулагдсан. 
           </p>
@@ -156,12 +156,12 @@ export default function AccordionUsage() {
 
 
 
-      <Accordion 
+      <Accordion  sx={{ borderRadius: '12px' }}
         className={`accordion ${expanded === 'panel4' ? 'expanded' : ''}`} 
         expanded={expanded === 'panel4'} 
         onChange={handleChange('panel4')}
       >
-        <AccordionSummary
+        <AccordionSummary sx={{ borderRadius: '12px' }}
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel4-content"
           id="panel4-header"
@@ -169,7 +169,7 @@ export default function AccordionUsage() {
         >
           Сэтгэц нийгмийн хөгжлийн үе шатууд (Психосоциаль)
         </AccordionSummary>
-        <AccordionDetails className="accordion-details">
+        <AccordionDetails sx={{ borderRadius: '12px' }} className="accordion-details">
           <p className='details-p'>
           Хөгжлийн сэтгэл судлалд насны үечлэлээр ялган ангилах оролдлого хийсэн олон онол хандлагууд байдаг. Тэдгээрийн дотор Э.Эриксоны хүний сэтгэцийн хөгжил нийгмийн хандлагыг нэгтгэн гаргасан ангилал онцгой байр суурь эзэлдэг. 
           </p>
@@ -282,12 +282,12 @@ export default function AccordionUsage() {
       </Accordion>
 
 
-      <Accordion 
+      <Accordion  sx={{ borderRadius: '12px' }}
         className={`accordion ${expanded === 'panel5' ? 'expanded' : ''}`} 
         expanded={expanded === 'panel5'} 
         onChange={handleChange('panel5')}
       >
-        <AccordionSummary
+        <AccordionSummary sx={{ borderRadius: '12px' }}
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel5-content"
           id="panel5-header"
@@ -295,7 +295,7 @@ export default function AccordionUsage() {
         >
           Ээнэгшлийн онол 
         </AccordionSummary>
-        <AccordionDetails className="accordion-details">
+        <AccordionDetails sx={{ borderRadius: '12px' }} className="accordion-details">
           
         <p className='details-p'>
         Ээнэгшин дасах онолыг хүүхдийн хөгжлийн асуудалтай холбон сэтгэл судлалыг судлах асуудлын хүрээнд өргөн тайлбарладаг хэдий ч Сканнапиоко ба түүний нөхдийн экологийн загвартай холбон тайлбарласнаар энд товч танилцуулъя.
@@ -346,12 +346,12 @@ export default function AccordionUsage() {
 
 
 
-      <Accordion 
+      <Accordion  sx={{ borderRadius: '12px' }}
         className={`accordion ${expanded === 'panel6' ? 'expanded' : ''}`} 
         expanded={expanded === 'panel6'} 
         onChange={handleChange('panel6')}
       >
-        <AccordionSummary
+        <AccordionSummary sx={{ borderRadius: '12px' }}
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel6-content"
           id="panel6-header"
@@ -359,7 +359,7 @@ export default function AccordionUsage() {
         >
           Экологийн загвар
         </AccordionSummary>
-        <AccordionDetails className="accordion-details">
+        <AccordionDetails sx={{ borderRadius: '12px' }} className="accordion-details">
           
         <p className='details-p'>
         Гарбариногийн (1977) тайлбарласнаар, хүний орчны экологийг дөрвөн систем буюу тогтолцоонд хуваан үзэх бөгөөд систем бүрийн нөлөөлөх хүчин зүйлсийг дараах байдлаар дэлгэн харуулсан. Үүнд: 
@@ -397,12 +397,12 @@ export default function AccordionUsage() {
       </Accordion>
 
 
-      <Accordion 
+      <Accordion  sx={{ borderRadius: '12px' }}
         className={`accordion ${expanded === 'panel7' ? 'expanded' : ''}`} 
         expanded={expanded === 'panel7'} 
         onChange={handleChange('panel7')}
       >
-        <AccordionSummary
+        <AccordionSummary sx={{ borderRadius: '12px' }}
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel7-content"
           id="panel7-header"
@@ -410,7 +410,7 @@ export default function AccordionUsage() {
         >
           Хөгжлийн талаарх Л.С.Выготскийн үзэл баримтлал
         </AccordionSummary>
-        <AccordionDetails className="accordion-details">
+        <AccordionDetails sx={{ borderRadius: '12px' }} className="accordion-details">
           
         <p>
         1. Хүүхдийн хөгжил цаг хугацааны хувьд нарийн бүтэц зохион байгуулалттай байх зүй тогтол:

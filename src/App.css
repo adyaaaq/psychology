@@ -901,8 +901,11 @@ li span {
 /* Accordion-container */
 
 .Accordion-contianer {
+  /* display: none; */
   max-width: 1200px;
   margin: 40px;
+  border-radius: 120px;
+  /* background-color: red; */
 }
 
 .accordion {

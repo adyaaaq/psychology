@@ -4,14 +4,16 @@
 .accordion {
     background-color: #0AB75B;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    /* border-radius: 30px; */
     margin-bottom: 16px;
   }
   
 .accordion.expanded {
+  /* border-radius: 30px; */
     border-bottom: 1px solid #0AB75B;
   }
   .accordion-summary {
+    /* border-radius: 30px; */
     background-color: #f7f7f7;
   }
   
