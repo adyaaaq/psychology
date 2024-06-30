@@ -895,6 +895,12 @@ li span {
   text-align: justify;
 }
 
+<<<<<<< HEAD ======= .details-p-list {
+  text-indent: 20px;
+  text-align: justify;
+}
+
+>>>>>>> b6a33eeca803f599ad7fe1a99d94090ab2a6494e
 /* Accordion-container */
 
 .Accordion-contianer {
@@ -917,4 +923,18 @@ li span {
   width: 180px; /* Adjust the width as needed */
   height: auto; /* Maintains the aspect ratio */
   display: block; /* Ensures it is displayed as a block element */
+}
+
+.details-body-container {
+  display: flex;
+  justify-content: center;
+}
+
+.indent {
+  display: block; /* Ensures the indent is on a new line */
+  /* padding-left: 1em; Adjust this value to increase or decrease the indentation */
+}
+
+.ageCard-img {
+  height: 100px;
 }

@@ -19,8 +19,11 @@ const Details = () => {
   const paragraphs2 = selectedNewsItem.developText2.split("##");
   const paragraphs2_1 = selectedNewsItem.developText2_1.split("##");
   return (
+    
+    <div className="details-body-container">
     <div className="details-body">
       {selectedNewsItem && (
+<<<<<<< HEAD
         <div>
           <div className="details-head">
             <img
@@ -39,6 +42,11 @@ const Details = () => {
             <li>§ {selectedNewsItem.title} сэтгэлийн хөдөлгөөн</li>
             <li>§ {selectedNewsItem.title} зан авир ба хэрэгцээ, сэдэл</li>
           </ul>
+=======
+        <div className="details-head"> 
+           <img className="details-img" src={selectedNewsItem.imageUrl} alt={selectedNewsItem.title} />
+           <h3>{selectedNewsItem.title} насны хүмүүсийн сэтгэл зүй ямар байдаг вэ?</h3>
+>>>>>>> b6a33eeca803f599ad7fe1a99d94090ab2a6494e
         </div>
       )}
 
@@ -106,6 +114,8 @@ const Details = () => {
         </div>
       )}
     </div>
+    </div>
+
   );
 };
 
