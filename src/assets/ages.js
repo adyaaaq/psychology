@@ -25,7 +25,7 @@ const ageCategories = [
     secondP: "Эхний 6 долоо хоногтой хүүхэд",
     developText2:
       " Төрснөөсөө хойшхи 6 долоо хоногтой хүртэлх хугацаа бол таны хүүхдийн хувьд гадаад ертөнц, шинэ амьдралтай дасан зохицох үе юм. Тэрээр өдрийн ихэнхийг унтаж өнгөрүүлнэ. Сэрүүн байх, хооллох хугацаа бага. ## Ийм насны хүүхэд: ## •	Өдрийн ихэнхийг унтаж өнгөрөөнө. ## •	Гараа үргэлж атгасан байна. ## •	Өөрийнхөө ойр байгаа хүн, юмыг дагуулан харж, дуу хоолойг сонсоно. ## •	Тавгүй болсон, өлссөн бол дохио өгч уйлна. Тэврэхэд дуртай байна. ## •	Гараа, эрхий хуруугаа хөхөхдөө сэтгэл хангалуун байна. ## •	Зарим нэг дуу авиа гаргана. ## •	Гэнэтийн өөрчлөлт, тод гэрэл, чанга дуунаас цочин уйлна. ## •	Дээшээ хараад хэвтэж байхдаа толгойгоо хажуу тийш эргүүлнэ. ## •	Нүүрнээс 20-30 см-ийн зайтай байгаа тод зүйлсийг харна.",
-    imageUrl: emeImage,
+    imageUrl: a,
     secondGroupFirstP: "6 долоо хоногтой хүүхдийн хэл ярианы хөгжил: ",
     developText2_1:
       " •	Өлсөх, тавгүйтэх, ядрах үедээ уйлна. ## •	Хүн амьтны дуу хоолой, юмны дуу авиаг чагнана. ##  •	Ойр гарсан дуу авианд хариу үйлдэл үзүүлнэ. ## •	Аав, ээжийнхээ эелдэг харилцаанд тайвширна.",
@@ -34,19 +34,14 @@ const ageCategories = [
     id: 2,
     title: "32-42",
     details: "Details 2",
-    imageUrl: emeImage,
+    imageUrl: a,
   },
   {
     id: 1,
     title: "22-25",
-<<<<<<< HEAD
     details:
       " Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. ##  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. ##  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.",
-    imageUrl: emeImage,
-=======
-    details: " Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. ##  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. ##  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.",
     imageUrl: a,
->>>>>>> b6a33eeca803f599ad7fe1a99d94090ab2a6494e
   },
   {
     id: 2,
@@ -55,18 +50,10 @@ const ageCategories = [
     imageUrl: a2,
   },
   {
-<<<<<<< HEAD
-    id: 1,
-    title: "22-25",
-    details:
-      " Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. ##  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. ##  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.",
-    imageUrl: emeImage,
-=======
     id: 2,
     title: "32-42",
     details: "Details 2",
     imageUrl: a3,
->>>>>>> b6a33eeca803f599ad7fe1a99d94090ab2a6494e
   },
   {
     id: 2,
@@ -75,18 +62,10 @@ const ageCategories = [
     imageUrl: a4,
   },
   {
-<<<<<<< HEAD
-    id: 1,
-    title: "22-25",
-    details:
-      " Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. ##  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. ##  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.",
-    imageUrl: emeImage,
-=======
     id: 2,
     title: "32-42",
     details: "Details 2",
     imageUrl: a5,
->>>>>>> b6a33eeca803f599ad7fe1a99d94090ab2a6494e
   },
   {
     id: 2,
@@ -95,18 +74,10 @@ const ageCategories = [
     imageUrl: a6,
   },
   {
-<<<<<<< HEAD
-    id: 1,
-    title: "22-25",
-    details:
-      " Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. ##  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. ##  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.",
-    imageUrl: emeImage,
-=======
     id: 2,
     title: "32-42",
     details: "Details 2",
     imageUrl: a7,
->>>>>>> b6a33eeca803f599ad7fe1a99d94090ab2a6494e
   },
   {
     id: 2,
@@ -115,13 +86,6 @@ const ageCategories = [
     imageUrl: a8,
   },
   {
-<<<<<<< HEAD
-    id: 1,
-    title: "22-25",
-    details:
-      " Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. ##  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. ##  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi. Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nis  Velit minim amet mollit ad ipsum dolore officia occaecat. Nostrud consequat est cupidatat veniam commodo irure dolor non. Sit qui in sit sunt ad cupidatat sit aliquip id labore voluptate consectetur velit occaecat. Dolore aliquip occaecat esse dolor ut consequat mollit irure consequat sunt nisi.",
-    imageUrl: emeImage,
-=======
     id: 2,
     title: "32-42",
     details: "Details 2",
@@ -132,7 +96,6 @@ const ageCategories = [
     title: "32-42",
     details: "Details 2",
     imageUrl: a10,
->>>>>>> b6a33eeca803f599ad7fe1a99d94090ab2a6494e
   },
 
   // Add more news items as needed
