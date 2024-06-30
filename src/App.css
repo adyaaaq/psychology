@@ -894,6 +894,8 @@ li span {
   display: block; /* Ensures it is displayed as a block element */
 }
 
+
+
 .details-body-container{
   display: flex;
   justify-content: center;
@@ -903,4 +905,9 @@ li span {
 .indent {
   display: block; /* Ensures the indent is on a new line */
   /* padding-left: 1em; Adjust this value to increase or decrease the indentation */
+}
+
+
+.ageCard-img{
+  height: 100px;
 }
