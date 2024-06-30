@@ -863,6 +863,11 @@ li span {
   text-align: justify;
 }
 
+.details-p-list {
+  text-indent: 20px;
+  text-align: justify;
+}
+
 
 
 /* Accordion-container */
@@ -892,4 +897,10 @@ li span {
 .details-body-container{
   display: flex;
   justify-content: center;
+}
+
+
+.indent {
+  display: block; /* Ensures the indent is on a new line */
+  /* padding-left: 1em; Adjust this value to increase or decrease the indentation */
 }
