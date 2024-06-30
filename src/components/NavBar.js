@@ -21,107 +21,103 @@ const NavBar = () => {
   }, [location]);
 
   return (
-    <div className="Big-container">
-      <div className="nav">
-        <div className="logo">
-          <img src={logo} alt="Хөгжлийн сэтгэл судлал" />
-        </div>
-        <div className="links">
-          <NavLink
-            exact
-            to="/"
-            className={`mainlink ${activeLink === "/" ? "active" : ""}`}
-            onClick={() => setActiveLink("/")}
-          >
-            Нүүр хуудас
-          </NavLink>
-          <NavLink
-            to="/news"
-            className={`mainlink ${activeLink === "/news" ? "active" : ""}`}
-            onClick={() => setActiveLink("/news")}
-          >
-            Насны онцлог
-          </NavLink>
-          <NavLink
-            to="/quiz"
-            className={`mainlink ${activeLink === "/quiz" ? "active" : ""}`}
-            onClick={() => setActiveLink("/quiz")}
-          >
-            Тест
-          </NavLink>
-          <NavLink
-            to="/books"
-            className={`mainlink ${activeLink === "/books" ? "active" : ""}`}
-            onClick={() => setActiveLink("/books")}
-          >
-            Шинэ номнууд
-          </NavLink>
-          <NavLink
-            to="/theories"
-            className={`mainlink ${activeLink === "/theories" ? "active" : ""}`}
-            onClick={() => setActiveLink("/theories")}
-          >
-            Сэтгэл судлалын онолууд
-          </NavLink>
-        </div>
-        <div className="menu-icon" onClick={toggleModal}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-        {showBackdrop && (
-          <div className="backdrop show" onClick={toggleModal}></div>
-        )}
-        <div
-          className={`modal ${showModal ? "show" : "hide"}`}
-          onClick={toggleModal}
+    <div className="nav">
+      <div className="logo">
+        <img src={logo} alt="Хөгжлийн сэтгэл судлал" />
+      </div>
+      <div className="links">
+        <NavLink
+          exact
+          to="/"
+          className={`mainlink ${activeLink === "/" ? "active" : ""}`}
+          onClick={() => setActiveLink("/")}
         >
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <div className="back-button" onClick={toggleModal}>
-              <FaArrowLeft size={20} style={{ fontWeight: "lighter" }} /> Буцах
-            </div>
-            <div className="modal-links">
-              <NavLink
-                exact
-                to="/"
-                className={`mainlink ${activeLink === "/" ? "active" : ""}`}
-                onClick={() => setActiveLink("/")}
-              >
-                Нүүр хуудас
-              </NavLink>
-              <NavLink
-                to="/news"
-                className={`mainlink ${activeLink === "/news" ? "active" : ""}`}
-                onClick={() => setActiveLink("/news")}
-              >
-                Насны онцлог
-              </NavLink>
-              <NavLink
-                to="/quiz"
-                className={`mainlink ${activeLink === "/quiz" ? "active" : ""}`}
-                onClick={() => setActiveLink("/quiz")}
-              >
-                Тест
-              </NavLink>
-              <NavLink
-                to="/books"
-                className={`mainlink ${
-                  activeLink === "/books" ? "active" : ""
-                }`}
-                onClick={() => setActiveLink("/books")}
-              >
-                Шинэ номнууд
-              </NavLink>
-              <NavLink
-                to="/theories"
-                className={`mainlink ${
-                  activeLink === "/theories" ? "active" : ""
-                }`}
-                onClick={() => setActiveLink("/theories")}
-              >
-                Сэтгэл судлалын онолууд
-              </NavLink>
-            </div>
+          Нүүр хуудас
+        </NavLink>
+        <NavLink
+          to="/news"
+          className={`mainlink ${activeLink === "/news" ? "active" : ""}`}
+          onClick={() => setActiveLink("/news")}
+        >
+          Насны онцлог
+        </NavLink>
+        <NavLink
+          to="/quiz"
+          className={`mainlink ${activeLink === "/quiz" ? "active" : ""}`}
+          onClick={() => setActiveLink("/quiz")}
+        >
+          Тест
+        </NavLink>
+        <NavLink
+          to="/books"
+          className={`mainlink ${activeLink === "/books" ? "active" : ""}`}
+          onClick={() => setActiveLink("/books")}
+        >
+          Шинэ номнууд
+        </NavLink>
+        <NavLink
+          to="/theories"
+          className={`mainlink ${activeLink === "/theories" ? "active" : ""}`}
+          onClick={() => setActiveLink("/theories")}
+        >
+          Сэтгэл судлалын онолууд
+        </NavLink>
+      </div>
+      <div className="menu-icon" onClick={toggleModal}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+      {showBackdrop && (
+        <div className="backdrop show" onClick={toggleModal}></div>
+      )}
+      <div
+        className={`modal ${showModal ? "show" : "hide"}`}
+        onClick={toggleModal}
+      >
+        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+          <div className="back-button" onClick={toggleModal}>
+            <FaArrowLeft size={20} style={{ fontWeight: "lighter" }} /> Буцах
+          </div>
+          <div className="modal-links">
+            <NavLink
+              exact
+              to="/"
+              className={`mainlink ${activeLink === "/" ? "active" : ""}`}
+              onClick={() => setActiveLink("/")}
+            >
+              Нүүр хуудас
+            </NavLink>
+            <NavLink
+              to="/news"
+              className={`mainlink ${activeLink === "/news" ? "active" : ""}`}
+              onClick={() => setActiveLink("/news")}
+            >
+              Насны онцлог
+            </NavLink>
+            <NavLink
+              to="/quiz"
+              className={`mainlink ${activeLink === "/quiz" ? "active" : ""}`}
+              onClick={() => setActiveLink("/quiz")}
+            >
+              Тест
+            </NavLink>
+            <NavLink
+              to="/books"
+              className={`mainlink ${activeLink === "/books" ? "active" : ""}`}
+              onClick={() => setActiveLink("/books")}
+            >
+              Шинэ номнууд
+            </NavLink>
+            <NavLink
+              to="/theories"
+              className={`mainlink ${
+                activeLink === "/theories" ? "active" : ""
+              }`}
+              onClick={() => setActiveLink("/theories")}
+            >
+              Сэтгэл судлалын онолууд
+            </NavLink>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 function Footer() {
   return (
     <div className="mt-5 pt-5 pb-5 footer">

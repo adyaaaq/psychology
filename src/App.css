@@ -52,20 +52,21 @@ a:focus {
 * {
   text-decoration: none !important;
 }
+
 .nav {
-  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   position: sticky;
   z-index: 1000;
   top: 0;
   right: 0;
   left: 0;
+  padding-right: 40px;
+  padding-left: 40px;
   height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 25px 0 25px;
   background-color: #fff;
 }
 
@@ -251,12 +252,14 @@ li span {
   max-width: 1200px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   padding: 40px 0;
   flex-wrap: wrap;
 }
-
+.ageCard-img {
+  height: 100px;
+}
 .infoCards .card {
   position: relative;
   height: 360px;
@@ -895,11 +898,6 @@ li span {
   text-align: justify;
 }
 
-.details-p-list {
-  text-indent: 20px;
-  text-align: justify;
-}
-
 /* Accordion-container */
 
 .Accordion-contianer {
@@ -922,18 +920,4 @@ li span {
   width: 180px; /* Adjust the width as needed */
   height: auto; /* Maintains the aspect ratio */
   display: block; /* Ensures it is displayed as a block element */
-}
-
-.details-body-container {
-  display: flex;
-  justify-content: center;
-}
-
-.indent {
-  display: block; /* Ensures the indent is on a new line */
-  /* padding-left: 1em; Adjust this value to increase or decrease the indentation */
-}
-
-.ageCard-img {
-  height: 100px;
 }
