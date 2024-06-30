@@ -844,6 +844,7 @@ li span {
 
 /* details page */
 .details-body {
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -886,4 +887,9 @@ li span {
   width: 60px; /* Adjust the width as needed */
   height: auto; /* Maintains the aspect ratio */
   display: block; /* Ensures it is displayed as a block element */
+}
+
+.details-body-container{
+  display: flex;
+  justify-content: center;
 }

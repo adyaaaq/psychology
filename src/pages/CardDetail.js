@@ -13,10 +13,11 @@ const Details = () => {
 
 
   return (
+    
+    <div className="details-body-container">
     <div className="details-body">
       
       {selectedNewsItem && (
-       
         <div className="details-head"> 
            <img className="details-img" src={selectedNewsItem.imageUrl} alt={selectedNewsItem.title} />
            <h3>{selectedNewsItem.title} насны хүмүүсийн сэтгэл зүй ямар байдаг вэ?</h3>
@@ -26,6 +27,7 @@ const Details = () => {
           <p key={index} className="details-p">{paragraph.trim()}</p>
         ))}
 
+    </div>
     </div>
 
   );
