@@ -1,71 +1,156 @@
 import React from "react";
-
-function Footer() {
+import { IonIcon } from "@ionic/react";
+import "./FOOT.css";
+import {
+  close,
+  search,
+  cart,
+  arrowForward,
+  menu,
+  checkmarkDone,
+  logoYoutube,
+  logoInstagram,
+  logoLinkedin,
+  logoFacebook,
+  logoTwitter,
+} from "ionicons/icons";
+import shutsan from "./logoshutsan.png";
+export default function Footer() {
   return (
-    <div className="mt-5 pt-5 pb-5 footer">
+    <footer className="footer">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-5 col-xs-12 about-company">
-            <h2>Heading</h2>
-            <p className="pr-5 text-white-50">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-              ante mollis quam tristique convallis{" "}
-            </p>
-            <p>
-              <a href="#">
-                <i className="fa fa-facebook-square mr-1"></i>
+        <div className="footer-top section">
+          <div className="container grid-list">
+            <div className="footer-brand">
+              <a href="/" className="logo">
+                <img src={shutsan} width="162" height="50" alt="SHUTSAN LOGO" />
               </a>
-              <a href="#">
-                <i className="fa fa-linkedin-square"></i>
-              </a>
-            </p>
-          </div>
-          <div className="col-lg-3 col-xs-12 links">
-            <h4 className="mt-lg-0 mt-sm-3">Links</h4>
-            <ul className="m-0 p-0">
+
+              <p className="footer-brand-text">
+                ШУТСангийн санхүүжилттэй "Хүний хөгжлийн сэтгэл зүйн судалгаа"
+                төслийн хүрээнд уг цахим хуудсыг хийв
+              </p>
+            </div>
+
+            <ul className="footer-list">
               <li>
-                - <a href="#">Lorem ipsum</a>
+                <p className="footer-list-title">Холбоос</p>
+              </li>
+
+              <li>
+                <a href="/" className="footer-a">
+                  Нүүр хуудас
+                </a>
               </li>
               <li>
-                - <a href="#">Nam mauris velit</a>
+                <a href="/news" className="footer-a">
+                  Насны онцлог
+                </a>
               </li>
               <li>
-                - <a href="#">Etiam vitae mauris</a>
-              </li>
-              <li>
-                - <a href="#">Fusce scelerisque</a>
-              </li>
-              <li>
-                - <a href="#">Sed faucibus</a>
-              </li>
-              <li>
-                - <a href="#">Mauris efficitur nulla</a>
+                <a href="/quiz" className="footer-a">
+                  Тест
+                </a>
               </li>
             </ul>
-          </div>
-          <div className="col-lg-4 col-xs-12 location">
-            <h4 className="mt-lg-0 mt-sm-4">Location</h4>
-            <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
-            <p className="mb-0">
-              <i className="fa fa-phone mr-3"></i>(541) 754-3010
-            </p>
-            <p>
-              <i className="fa fa-envelope-o mr-3"></i>info@hsdf.com
-            </p>
+            <ul className="footer-list">
+              <li>
+                <p className="footer-list-title">Сургалт</p>
+              </li>
+              <li>
+                <a href="/books" className="footer-a">
+                  Шинэ номнууд
+                </a>
+              </li>
+              <li>
+                <a href="/theories" className="footer-a">
+                  Сэтгэл судлалын онолууд
+                </a>
+              </li>
+            </ul>
+
+            <div className="footer-list">
+              <p className="footer-list-title">Бидэнтэй холбогдох:</p>
+
+              <div className="wrapper">
+                <span className="span">Хаяг: </span>
+                <a
+                  href="https://maps.app.goo.gl/KUJBxS8HkW5xC3ZV7"
+                  className="footer-a"
+                >
+                  Монгол улс, Улаанбаатар хот, Сүхбаатар дүүрэг, 8 дугаар хороо,
+                  Мэдээлэл технологийн үндэсний парк 3 давхар 317 тоот
+                </a>
+              </div>
+
+              <div className="wrapper">
+                <span className="span">Утас: </span>
+                <a href="" className="footer-a">
+                  +976 11-327634; 11-31574
+                </a>
+              </div>
+              <div className="wrapper">
+                <span className="span">Email: </span>
+                <a className="footer-a">info@stf.gov.mn</a>
+              </div>
+              {/* <form action="" className="newsletter-form">
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Your email"
+                  required
+                  className="input-field"
+                />
+
+                <button type="submit" className="btn has-before">
+                  <span className="span">Subscribe</span>
+                  <IonIcon icon={arrowForward} />
+                </button>
+              </form> */}
+
+              {/* <ul className="social-list">
+                <li>
+                  <a
+                    href="https://www.facebook.com/erdene.msut.edu"
+                    className="social-a"
+                  >
+                    <IonIcon icon={logoFacebook} />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" className="social-a">
+                    <IonIcon icon={logoInstagram} />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" className="social-a">
+                    <IonIcon icon={logoTwitter} />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" className="social-a">
+                    <IonIcon icon={logoYoutube} />
+                  </a>
+                </li>
+              </ul> */}
+            </div>
           </div>
         </div>
-        <div className="row mt-5">
-          <div className="col copyright">
-            <p className="">
-              <small className="text-white-50">
-                © 2019. All Rights Reserved.
-              </small>
+
+        <div className="footer-bottom">
+          <div className="container">
+            <p className="copyright">
+              Copyright 2024 All Rights Reserved by{" "}
+              <a href="#" className="copyright-a">
+                AideaVision LLC
+              </a>
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
-
-export default Footer;
